@@ -22,7 +22,7 @@ The properties you need to add to each element are:
     font-size: 36px;
 }
 
-#third-element {
+.third-element {
     font-size: 24px;
 }
 
