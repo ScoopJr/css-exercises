@@ -1,40 +1,60 @@
 body{
   font-family:Arial, Helvetica, sans-serif
 }
+/*
+<p class="para">I'm just a paragraph with extra bold text!</p>
+<p class="para small-para">I'm a smaller paragraph, also with extra bold text!</p>
 
+<button id="confirm-button" class="button confirm">Confirm</button>
+<button id="cancel-button" class="button cancel">Cancel</button>
+
+<div class="text">I'm a div with thin text!</div>
+
+<div class="text">I'm a div with thin text and a child div!
+  <div class="text child">I'm a smaller child div with extra bold text.</div>
+</div>
+*/
+
+/*kept same*/
 .para,
 .small-para {
   color: hsl(0, 0%, 0%);
   font-weight: 800;
 }
 
+/*moved to priority over .small-para*/
+.para {
+  font-size: 22px;
+}
+
+/*kept same*/
 .small-para {
   font-size: 14px;
   font-weight: 800;
 }
 
-.para {
-  font-size: 22px;
-}
-
-.confirm {
+/*changed from .confirm to .confirm.button*/
+.confirm.button {
   background: green;
   color: white;
   font-weight: bold;
 } 
 
+/*kept same*/
 .button {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
   font-size: 20px;
 }
 
-.child {
+/*changed from .child to .text.child*/
+.text.child {
   color: rgb(0, 0, 0);
   font-weight: 800;
   font-size: 14px;
 }
 
+/*kept same*/
 div.text {
   color: rgb(0, 0, 0);
   font-size: 22px;
